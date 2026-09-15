@@ -18,7 +18,7 @@ body {
   background-color: var(--gap-bg);
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2px;
+  gap: 1px;
 }
 
 .status-grid {
@@ -38,4 +38,27 @@ header,
 footer {
   padding: 20px;
   background-color: var(--main-bg);
+}
+
+@media (min-width: 1440px) {
+  .layout {
+    grid-template-columns: 1fr 1fr;
+  }
+  header,
+  footer {
+    grid-column: 1/-1;
+  }
+  .status-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+  }
+  .sec1,
+  .sec2,
+  .sec3,
+  .sec4 {
+    background-color: var(--main-bg);
+    min-height: 410px;
+    min-width: 410px;
+  }
 }
