@@ -31,7 +31,8 @@ body {
   display: contents;
 }
 
-/* setup padding and perent layout for sub-grid */
+/* setup header and footer  */
+
 .hero {
   padding: 30px;
   min-height: 450px;
@@ -68,10 +69,23 @@ img {
 /* setup fonts sytle  */
 header,
 footer {
-  padding: 20px;
+  padding: 20px 30px;
   background-color: var(--main-bg);
   font-size: 14px;
   font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer {
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.header-img {
+  width: 30px;
+  height: 30px;
 }
 
 .hero h1 {
@@ -98,6 +112,12 @@ h2 {
   header,
   footer {
     grid-column: 1/-1;
+    padding: 20px 50px;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: rest;
   }
   .hero-text {
     text-align: center;
