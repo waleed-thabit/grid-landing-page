@@ -44,7 +44,27 @@ header,
 footer {
   padding: 20px;
   background-color: var(--main-bg);
+  font-size: 14px;
+  font-weight: 500;
 }
+
+.hero h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
+.desc {
+  font-size: 14px;
+  font-weight: 400;
+}
+.title {
+  font-size: 17px;
+  font-weight: 500;
+}
+h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
 /* med secrrns  */
 @media (min-width: 768px) {
   header,
