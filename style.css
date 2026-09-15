@@ -40,6 +40,27 @@ footer {
   background-color: var(--main-bg);
 }
 
+@media (min-width: 768px) {
+  header,
+  footer {
+    grid-column: 1/-1;
+  }
+
+  .status-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+  }
+  .sec1,
+  .sec2,
+  .sec3,
+  .sec4 {
+    background-color: var(--main-bg);
+    min-height: 410px;
+    min-width: 410px;
+  }
+}
+
 @media (min-width: 1440px) {
   .layout {
     grid-template-columns: 1fr 1fr;
@@ -47,6 +68,9 @@ footer {
   header,
   footer {
     grid-column: 1/-1;
+  }
+  .hero {
+    grid-column: span 1;
   }
   .status-grid {
     display: grid;
