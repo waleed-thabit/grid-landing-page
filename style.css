@@ -35,6 +35,11 @@ body {
 .hero {
   padding: 30px;
   min-height: 450px;
+  background-color: var(--main-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .sec1,
 .sec2,
@@ -52,7 +57,12 @@ body {
 .icon-num {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
+}
+img {
+  width: 40px;
+  height: 40px;
 }
 
 /* setup fonts sytle  */
@@ -72,9 +82,11 @@ footer {
   font-size: 14px;
   font-weight: 400;
 }
-.title {
+.title,
+.hero p {
   font-size: 17px;
   font-weight: 500;
+  line-height: 1.8;
 }
 h2 {
   font-size: 40px;
@@ -87,7 +99,9 @@ h2 {
   footer {
     grid-column: 1/-1;
   }
-
+  .hero-text {
+    text-align: center;
+  }
   .status-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -107,6 +121,12 @@ h2 {
 @media (min-width: 1440px) {
   .layout {
     grid-template-columns: 1fr 1fr;
+  }
+  .hero-text {
+    text-align: left;
+  }
+  .hero-text h1 span {
+    display: block;
   }
   header,
   footer {
