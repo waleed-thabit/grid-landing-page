@@ -1,9 +1,12 @@
+/* define a global varibales  */
 :root {
   --font-clr: hsl(224, 100%, 95%);
   --gap-bg: hsl(220, 100%, 64%);
   --main-bg: hsl(228, 99%, 58%);
   --hover-bg: hsl(228, 100%, 60%);
 }
+
+/* reset style and set a font  */
 * {
   box-sizing: border-box;
 }
@@ -13,6 +16,8 @@ body {
   font-family: Inter;
   color: var(--font-clr);
 }
+
+/* setup a main container layout and grid system  */
 .layout {
   min-height: 100vh;
   background-color: var(--gap-bg);
@@ -21,6 +26,7 @@ body {
   gap: 1px;
 }
 
+/* setup the sup-container as conteents (no need to grid now ) */
 .status-grid {
   display: contents;
 }
@@ -39,7 +45,7 @@ footer {
   padding: 20px;
   background-color: var(--main-bg);
 }
-
+/* med secrrns  */
 @media (min-width: 768px) {
   header,
   footer {
@@ -61,6 +67,7 @@ footer {
   }
 }
 
+/* large screens  */
 @media (min-width: 1440px) {
   .layout {
     grid-template-columns: 1fr 1fr;
