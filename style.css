@@ -121,12 +121,15 @@ h2 {
   header,
   footer {
     grid-column: 1/-1;
-    padding: 20px 50px;
+    padding: auto 50px;
   }
   footer {
     flex-direction: row;
     justify-content: space-between;
-    align-items: rest;
+    align-items: center;
+  }
+  .hero-text h1 {
+    font-size: 60px;
   }
   .hero-text {
     text-align: center;
@@ -141,8 +144,8 @@ h2 {
   .sec3,
   .sec4 {
     background-color: var(--main-bg);
-    min-height: 410px;
-    min-width: 410px;
+    min-height: 350px;
+    min-width: 300px;
   }
 }
 
@@ -151,8 +154,15 @@ h2 {
   .layout {
     grid-template-columns: 1fr 1fr;
   }
+  .hero-text p span {
+    display: block;
+  }
   .hero-text {
     text-align: left;
+    padding: 50px;
+  }
+  .hero-text h1 {
+    font-size: 65px;
   }
   .hero-text h1 span {
     display: block;
@@ -160,21 +170,25 @@ h2 {
   header,
   footer {
     grid-column: 1/-1;
+    padding: 10px 50px;
   }
   .hero {
     grid-column: span 1;
+    align-items: start;
+    padding: 0 0 80px 0;
   }
   .status-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1px;
   }
+
   .sec1,
   .sec2,
   .sec3,
   .sec4 {
     background-color: var(--main-bg);
-    min-height: 410px;
-    min-width: 410px;
+    min-height: 350px;
+    min-width: 250px;
   }
 }
