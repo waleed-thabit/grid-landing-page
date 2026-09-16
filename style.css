@@ -16,6 +16,30 @@ body {
   font-family: Inter;
   color: var(--font-clr);
 }
+/* setup the menu but */
+.menu-toggle,
+.close-icon {
+  display: none;
+}
+
+/* setup the black cover  */
+.black-drop {
+  position: fixed;
+  inset: 0;
+  background-color: black;
+  opacity: 25%;
+  visibility: hidden;
+}
+.menu-toggle:checked ~ .black-drop {
+  visibility: visible;
+}
+
+.menu-toggle:checked ~ .layout header .hamb-menu {
+  display: none;
+}
+.menu-toggle:checked ~ .layout header .close-icon {
+  display: block;
+}
 
 /* setup a main container layout and grid system  */
 .layout {
@@ -61,7 +85,7 @@ body {
   align-items: center;
   width: 100%;
 }
-img {
+.icons {
   width: 40px;
   height: 40px;
 }
@@ -82,7 +106,8 @@ footer {
   justify-content: center;
   align-items: start;
 }
-.header-img {
+.hamb-menu,
+.close-icon {
   width: 30px;
   height: 30px;
   cursor: pointer;
