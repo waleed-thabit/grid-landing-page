@@ -137,6 +137,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: auto;
 }
 footer {
   flex-direction: column;
@@ -211,7 +212,7 @@ h2 {
   }
   .side-bar {
     width: 30%;
-    height: 100vb;
+    height: 90vb;
     left: 70%;
     align-items: start;
     padding-top: 50px;
