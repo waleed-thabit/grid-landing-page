@@ -21,7 +21,36 @@ body {
 .close-icon {
   display: none;
 }
+header {
+  position: relative;
+}
 
+.side-bar {
+  position: absolute;
+  visibility: hidden;
+  background-color: var(--main-bg);
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 57vb;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid var(--gap-bg);
+  align-items: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.8;
+  font-width: 500;
+}
+li:hover {
+  text-decoration-line: underline;
+}
 /* setup the black cover  */
 .black-drop {
   position: fixed;
@@ -30,6 +59,10 @@ body {
   opacity: 25%;
   visibility: hidden;
 }
+.menu-toggle:checked ~ .layout header .side-bar {
+  visibility: visible;
+}
+
 .menu-toggle:checked ~ .black-drop {
   visibility: visible;
 }
@@ -172,6 +205,13 @@ h2 {
     min-height: 350px;
     min-width: 300px;
   }
+  .side-bar {
+    width: 30%;
+    height: 100vb;
+    left: 70%;
+    align-items: start;
+    padding-top: 50px;
+  }
 }
 
 /* large screens  */
@@ -215,5 +255,12 @@ h2 {
     background-color: var(--main-bg);
     min-height: 350px;
     min-width: 250px;
+  }
+  .side-bar {
+    width: 25%;
+    height: 90vb;
+    left: 75%;
+    align-items: start;
+    padding-top: 50px;
   }
 }
